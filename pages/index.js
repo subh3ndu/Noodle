@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { SearchIcon, ToolsIcon } from "../components/Icons";
 import Avatar from "../components/Avatar";
 import Footer from "../components/Footer";
+import logo from "../public/noodle.png"
 
 export default function Home() {
   const router = useRouter();
@@ -21,12 +22,12 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <Head>
-        <title>Google</title>
+        <title>Noodle</title>
         <meta
           name="description"
           content="Noodle best search engine in the universe"
         />
-        <link rel="icon" href="./google.svg" />
+        <link rel="icon" href="./noodle_top.svg" />
       </Head>
 
       {/* Header */}
@@ -39,7 +40,7 @@ export default function Home() {
 
         {/* right */}
         <div className="flex space-x-4 items-center">
-          <p className="link">Gmail</p>
+          <p className="link">Nmail</p>
           <p className="link">Images</p>
 
           {/* Icon */}
@@ -54,8 +55,8 @@ export default function Home() {
       <form className="flex flex-col items-center mt-36 flex-grow w-4/5">
         <Image
           width={300}
-          height={100}
-          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          height={75}
+          src={logo}
         />
         <div className="flex w-full mt-5 px-5 py-3 max-w-sm rounded-full hover:shadow-md focus-within:shadow-md border border-gray-200 items-center sm:max-w-xl lg:max-w-2xl">
           <SearchIcon className="h-4 mr-3 text-gray-500" />
@@ -71,7 +72,7 @@ export default function Home() {
 
         <div className="flex space-x-4 mt-5">
           <button className="btn" onClick={search}>
-            Google Search
+            Noodle Search
           </button>
           <button className="btn" onClick={search}>
             I'm Feeling Lucky

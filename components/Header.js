@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { CrossIcon, SearchIcon } from "./Icons";
 import Avatar from "./Avatar";
 import HeaderOptions from "../components/HeaderOptions";
+import logo from "../public/noodle.png"
 
 const Header = () => {
   const router = useRouter();
@@ -22,9 +23,9 @@ const Header = () => {
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center">
         <Image
-          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          src={logo}
           width={110}
-          height={35}
+          height={25}
           className="cursor-pointer"
           onClick={() => router.push("/")}
         />

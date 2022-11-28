@@ -5,6 +5,7 @@ import { API_KEY, CONTEXT_KEY } from "../keys";
 import Response from "../Response";
 import SearchResults from "../components/SearchResults";
 import Footer from "../components/Footer";
+import logo from "../public/noodle.png"
 
 const Search = ({ results }) => {
   const router = useRouter();
@@ -12,12 +13,12 @@ const Search = ({ results }) => {
   return (
     <div>
       <Head>
-        <title>{router.query.q} - Google Search</title>
+        <title>{router.query.q} - Noodle Search</title>
         <meta
           name="description"
           content="Noodle, The best search engine in the universe"
         />
-        <link rel="icon" href="./google.svg" />
+        <link rel="icon" href="./noodle_top.svg" />
       </Head>
 
       {/* Header */}
